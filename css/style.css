@@ -1,0 +1,330 @@
+/* Responsibidad */
+* {
+  box-sizing: border-box;
+}
+
+/* ##### Estilos para mobile first ##### */
+/* 
+  A los 320px===>
+    Botones de la barra de navegacion que ocupan el ancho de la pantalla
+    El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+    Imagenes de los servicios ocupan el ancho de la columna
+    La seccion de los datos de contacto es pequeña
+*/
+[class*="grid"] {
+  width: 100%;
+}
+
+/* Estilo para la imagen de fondo del header*/
+header img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+/* Estilo para los botones de la barra de navegacion */
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(1);
+}
+
+/* Estilo para los botones, aplicados a la barra de navegacion, seccion hero y formulario */
+.boton {
+  background-color: rgb(41, 41, 44);
+  color: white;
+  padding: 5px 5px 5px 5px;
+  margin: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 99%;
+  text-align: center;
+}
+
+/* Estilo para el cuerpo de la pagina, en general. Se establece color de fondo, texto alienado al centro */
+body {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para todos itemes de las listas ordenas y no ordenadas */
+h3, li {
+  text-align: left;
+}
+
+/* Estilo para el fondo de la seccion hero */
+#hero-fondo {
+  background-image: url(/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  border-radius: 15px;
+}
+
+/* Estilo para titulo h2 del header, la seccion hero, la seccion servicios y la seccion contacto */
+.titulo-h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+/* Estilo blanco para titulo h2 de la seccion hero */
+.titulo-h2-blanco {
+  color: white;
+}
+
+/* Estilo para el contenido de la seccion hero */
+#hero-contenido {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+#acerca-de-mi-img img {
+  margin-top: 15px;
+  width: 45%;
+  border-radius: 15px;
+}
+
+/* Estilo para el contenido de la seccion acerca-de-mi */
+#acerca-de-mi-cont {
+  padding: 25px 25px 25px 25px;
+  text-align: justify;
+}
+
+/* Estilo para el contenido de las secciones de servicios */
+.servicios {
+  margin: 15px 15px;
+  text-align: justify;
+}
+
+/* Estilo para las imagenes de las secciones de servicios */
+.servicios-img {
+  width: 280px;
+  height: 160px;
+  border-radius: 15px;
+}
+
+/* Estilo para el fondo de la seccion formulario */
+#contacto-form {
+  background-color: rgb(78, 81, 122);
+  background-image: url(/img/Contacto.webp);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  margin: 25px 25px;
+  padding: 25px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+/* Estilo para el fieldset de la seccion formulario */
+fieldset {
+  font-size: 20px;
+}
+
+/* Estilo para los labels de la seccion formulario */
+.contacto-parrafo {
+  font-size: 20px;
+  color: lightgoldenrodyellow;
+}
+
+/* Estilos para los input text de la seccion formulario */
+input {
+  font-size: 15px;
+  width: 100%;
+}
+
+/* Estilos para el textarea de la seccion formulario */
+textarea {
+  height: 50px;
+  width: 100%;
+}
+
+/* Estilo de fondo para la seccion ubicacion */
+#contacto-ubicacion-fondo {
+  margin: 25px 25px;
+  padding: 2px 2px;
+  background-image: url(/img/Ubicacion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/* Estilo del contenido para la seccion ubicacion */
+#ubicacion-contenido {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0 0 0 / 70%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+/* Estilo del contenido seccion ubicacion */
+.ul-li {
+  list-style: none;
+  font-size: 10px;
+  color: white;
+}
+
+/* ##### Media Queris #####  */
+
+/* 
+  Medida para 768px iPad ===>
+    Botones de la barra de navegacion ocupan una grilla con 4 columnas
+    El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen el ancho de la pantalla, en solo una columna
+    Imagenes de los servicios ocupan una parte de la columna    
+*/
+@media only screen and (min-width: 768px) {
+  /* Estilo de grilla para la barra de navegacion */
+  .nav-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Estilo para la barra de navegacion */
+  nav {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  /* Estilo para los botones, aplicados a la barra de navegacion, seccion hero y formulario */
+  .boton {
+    background-color: rgb(41, 41, 44);
+    color: white;
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 85%;
+    text-align: center;
+  }
+
+  /* Estilo para la seccion acerca de mi */
+  #acerca-de-mi-img {
+    display: flex;
+    align-items: center; /*Alineacion vertical*/
+    justify-content: center; /*Alineacion horizontal*/
+  }
+
+  /* Estilo para la imagen de la seccion acerca de mi */
+  #acerca-de-mi-img img {
+    width: 50%;
+    border-radius: 15px;
+  }
+
+  /* Estilo para el contenido de las secciones de servicios */
+  .servicios {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+  }
+
+  /* Estilo para las imagenes de las secciones de servicios */
+  .servicios-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  /* Estilo para el fondo de la seccion formulario */
+  #contacto-form {
+    background-color: rgb(78, 81, 122);
+    background-image: url(/img/Contacto.webp);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    margin: 25px 25px;
+    padding: 25px;
+    text-align: left;
+    border-radius: 15px;
+  }
+
+  /* Estilo para el fieldset de la seccion formulario */
+  fieldset {
+    font-size: 25px;
+  }
+
+  /* Estilo para los labels de la seccion formulario */
+  .contacto-parrafo {
+    font-size: 20px;
+    color: lightgoldenrodyellow;
+  }
+
+  /* Estilos para los input text de la seccion formulario */
+  input {
+    font-size: 15px;
+    width: 85%;
+  }
+
+  /* Estilos para el textarea de la seccion formulario */
+  textarea {
+    height: 50px;
+    width: 85%;
+  }
+
+  /* Estilo del contenido seccion ubicacion */
+  .ul-li {
+    list-style: none;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+/* 
+  Medida para 1200px PC ===>
+    Botones de la barra de navegacion ocupan una grilla con 4 columnas
+    El contenido de las demas secciones, Acerca de mi, Servicios y Contacto estan dispuestas para que ocupen una grilla con 2 columnas
+    Imagenes de los servicios ocupan una parte de la columna
+    La seccion de los datos de contacto tiene el mismo tamaño que el formulario de contacto
+*/
+@media only screen and (min-width: 1200px) {
+  /* Estilo de grilla para las secciones de acerca de mi, servicios y contacto */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Estilo para los botones, aplicados a la barra de navegacion, seccion hero y formulario */
+  .boton {
+    background-color: rgb(41, 41, 44);
+    color: white;
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 85%;
+    text-align: center;
+  }
+
+  /* Estilo para la imagen de la seccion acerca de mi */
+  #acerca-de-mi-img img {
+    width: 80%;
+    border-radius: 15px;
+  } 
+}
