@@ -166,7 +166,7 @@ textarea {
 #contacto-ubicacion-fondo {
   margin: 25px 25px;
   padding: 2px 2px;
-  background-image: url(/img/Ubicacion.jpg);
+  background-image: url(../img/Ubicacion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
