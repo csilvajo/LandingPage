@@ -68,7 +68,7 @@ h3, li {
 
 /* Estilo para el fondo de la seccion hero */
 #hero-fondo {
-  background-image: url(./img/hero.jpg);
+  background-image: url(/img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
